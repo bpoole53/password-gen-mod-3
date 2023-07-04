@@ -89,11 +89,33 @@ function chooseCharacter (charUser) {
     types.push(numbers[Math.floor(Math.random() * numbers.length)]);
     types.push(specials[Math.floor(Math.random() * specials.length)]);
   }
+  if (charChoice === 'US') {
+    types.push(uppercase[Math.floor(Math.random() * uppercase.length)]);
+    types.push(specials[Math.floor(Math.random() * specials.length)]);
+  }  
   if (charChoice === 'N') {
     types.push(numbers[Math.floor(Math.random() * numbers.length)]);
   }
   if (charChoice === 'NS') {
     types.push(numbers[Math.floor(Math.random() * numbers.length)]);
+    types.push(specials[Math.floor(Math.random() * specials.length)]);
+  }
+  if (charChoice === 'LNS') {
+    types.push(lowercase[Math.floor(Math.random() * lowercase.length)]);
+    types.push(numbers[Math.floor(Math.random() * numbers.length)]);
+    types.push(specials[Math.floor(Math.random() * specials.length)]);
+  }
+  if (charChoice === 'LUS') {
+    types.push(lowercase[Math.floor(Math.random() * lowercase.length)]);
+    types.push(uppercase[Math.floor(Math.random() * uppercase.length)]);
+    types.push(specials[Math.floor(Math.random() * specials.length)]);
+  }
+  if (charChoice === 'LN') {
+    types.push(lowercase[Math.floor(Math.random() * lowercase.length)]);
+    types.push(numbers[Math.floor(Math.random() * numbers.length)]);
+  }
+  if (charChoice === 'LS') {
+    types.push(lowercase[Math.floor(Math.random() * lowercase.length)]);
     types.push(specials[Math.floor(Math.random() * specials.length)]);
   }
   if (charChoice === 'S') {
